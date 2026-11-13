@@ -6,7 +6,7 @@ public class EcommerceApplicationProject {
         
        // 1. Declare Users: 
       User user1 = new User("lulu", "Eylül", "Bahçeci", "05/09/2005", "123456", "eylulubahceci@oop.com", "Defne/Hatay", "hacettepe");
-      User user2 = new User("kole", "Andrea Ramazan", "Yıldırım", "10/07/2007", "789012", "koleyildirim@oop.com", "Ceyhan/Adana", "ual");
+      User user2 = new User("kole", "Andrey Ramazan", "Yıldırım", "10/07/2007", "789012", "koleyildirim@oop.com", "Ceyhan/Adana", "ual");
       
       // 2. Declare Credit Cards:
       CreditCard creditCard1 = new CreditCard("5935455935455935", user1, "121", "10/29", 8000);
