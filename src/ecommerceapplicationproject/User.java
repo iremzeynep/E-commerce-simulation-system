@@ -12,7 +12,7 @@ public class User  {
     private String eMailAddress;
     private String homeAddress;
     private String workAddress;
-    private ArrayList<CreditCard> creditCards; // İsim çoğul yapıldı (Clean Code)
+    private ArrayList<CreditCard> creditCards; 
     private ArrayList<Product> productsOrdered;
     private ArrayList<Product> favoriteProducts;
     
@@ -28,7 +28,7 @@ public class User  {
         this.workAddress=workAddress;
         this.productsOrdered=new ArrayList<>();
         this.favoriteProducts=new ArrayList<>();
-        this.creditCards=new ArrayList<>(); // Güncellendi
+        this.creditCards=new ArrayList<>(); 
     }
     
     //Override method to assist the compiler in catching errors.
@@ -38,13 +38,13 @@ public class User  {
                 ", name=" + name + 
                 ", surname=" + surname + 
                 ", dateOfBirth=" + dateOfBirth + 
-                ", password=******" + // Şifre maskelendi
+                ", password=******" + 
                 ", eMailAddress=" + eMailAddress + 
                 ", homeAddress=" + homeAddress + 
                 ", workAddress=" + workAddress + 
                 ", productsOrdered=" + productsOrdered + 
                 ", favoriteProducts=" + favoriteProducts + 
-                ", creditCards=" + creditCards; // Güncellendi
+                ", creditCards=" + creditCards; 
     }
     
     //Getter and Setter methods for the User class:
@@ -58,7 +58,7 @@ public class User  {
     public String getWorkAddress() { return workAddress; }
     public ArrayList<Product> getProductsOrdered() { return productsOrdered; }
     public ArrayList<Product> getFavoriteProducts() { return favoriteProducts; }
-    public ArrayList<CreditCard> getCreditCards() { return creditCards; } // Güncellendi
+    public ArrayList<CreditCard> getCreditCards() { return creditCards; } 
 
     public void setUsername(String username) { this.username = username; }
     public void setName(String name) { this.name = name; }
@@ -70,7 +70,7 @@ public class User  {
     public void setWorkAddress(String workAddress) { this.workAddress = workAddress; }
     public void setProductsOrdered(ArrayList<Product> productsOrdered) { this.productsOrdered = productsOrdered; }
     public void setFavoriteProducts(ArrayList<Product> favoriteProducts) { this.favoriteProducts = favoriteProducts; }
-    public void setCreditCards(ArrayList<CreditCard> creditCards) { this.creditCards = creditCards; } // Güncellendi
+    public void setCreditCards(ArrayList<CreditCard> creditCards) { this.creditCards = creditCards; } 
     
     //A method to add products to favorite products list:
     public void addToFavoriteProducts (Product product){
@@ -84,9 +84,6 @@ public class User  {
         System.out.println("This product has been removed from " + this.username + "'s favorite list: " + product.getProductName());
     }
     
-    // Kullanılmayan hatalı sipariş metodu tamamen silindi. 
-    // İşlem artık profesyonelce Order.java üzerinden dönüyor.
-      
     //Users Favorite product list
     public void favoriteProductList(User user){
         for(int i=0; i<this.getFavoriteProducts().size(); i++){
@@ -100,10 +97,10 @@ public class User  {
         System.out.println("Name : " + this.name);
         System.out.println("Surname : " +  this.surname);
         System.out.println("Birthday : " + this.dateOfBirth);
-        System.out.println("Password : ******"); // Şifre maskelendi
+        System.out.println("Password : ******"); 
         System.out.println("E-mail Address : " + this.eMailAddress);
         System.out.println("Home Address : " + this.homeAddress);
         System.out.println("Work Address : " + this.workAddress);
-        System.out.println("Registered Credit Cards : " + this.creditCards + "\n"); // Güncellendi
+        System.out.println("Registered Credit Cards : " + this.creditCards + "\n");
     }
 }
